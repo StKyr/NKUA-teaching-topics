@@ -44,8 +44,8 @@ iterations    = 50
 
 # Model parameters (trainable): w: slope, b: intercept
 # Initialize them in random values (w in [0,90] degrees and b inside the range of the y values) 
-w  = np.random.uniform(1)*np.pi
-b  = np.random.uniform(1) + (y.max() - y.min())/2
+w  = np.random.uniform(0, np.pi)
+b  = np.random.uniform(y.min(), y.max())
 
 
 

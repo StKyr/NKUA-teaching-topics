@@ -3,8 +3,8 @@ import numpy as np
 x             = np.linspace(0,1,100)
 y             = 5 * x + 2 + 0.25*np.random.randn(100)
 learning_rate = 0.004
-w             = np.random.uniform(1)*np.pi
-b             = np.random.uniform(1) + (y.max() - y.min())/2
+w             = np.random.uniform(0, np.pi)
+b             = np.random.uniform(y.min(), y.max())
 
 for i in range(50):
     predictions = w*x + b
